@@ -37,12 +37,13 @@ headers tx =
 
 hyperlink : String -> String -> Html msg
 hyperlink tx1 tx2 =
-    a [ href tx1 , target "blank"] [ text tx2 ]
-
+    a [ href tx1, target "blank" ] [ text tx2 ]
 
 
 
 -- Puedes usar una definición como la siguiente para probar y visualizar tus resultados, solo debes definir "headers" y "hyperlink"
+
+
 main : Html.Html msg
 main =
-   Html.div [] [ headers "Titulos", hyperlink "https://upa.edu.mx" "My School" ]
+    Html.div [] [ headers "Titulos", hyperlink "https://upa.edu.mx" "My School" ]
